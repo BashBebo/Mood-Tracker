@@ -6,11 +6,26 @@
     <title>Mood Tracker</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 </head>
 <body>
     <main>
+        <h1 class="H1Message" id="H1_Message">Mood of the day</h1>
+        <h2 class="H2Message" id="H2_Message">"Hey User, Whats your vibe?"</h2>
+        <div class="EmojiGrid">
+             <button class="mood-btn" data-mood="happy">😊</button>
+             <button class="mood-btn" data-mood="sad">😢</button>
+             <button class="mood-btn" data-mood="focused">💻</button>
+             <button class="mood-btn" data-mood="tired">😴</button>
+             <button class="mood-btn" data-mood="angry">😡</button>
+             <button class="mood-btn" data-mood="excited">🤩</button>
+        </div>
+        <button class="submit-btn" id="submitBtn">Log Mood</button>
     </main>
     <script src="index.js"></script>
 </body>

@@ -1,0 +1,1 @@
+console.log('MiniMood Tracker on track!')
