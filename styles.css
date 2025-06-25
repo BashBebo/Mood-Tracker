@@ -1,16 +1,99 @@
 body {
   font-family: 'Inter' , sans-serif;
+  color: #111827;
+  background: linear-gradient(130deg, #ffffff, #dadada);
+  margin: 0;
+  padding: 0;
 }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+
 h1, h2 {
   font-family: 'Inter', sans-serif;
 }
 
 .H1Message {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     text-align: center;
+    margin:  50px 0;
+    font-weight: bold;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.8rem;
+    align-items: center;
 }
 
 .H2Message {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
+    position: relative;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #4b5563;
+    margin-bottom: 1.4rem;
+    align-items: center;
+}
+
+.EmojiGrid {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+.mood-btn {
+    font-size: 2.1rem;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e4e6e9; /* Light gray */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: inset 3px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease
+}
+
+.mood-btn:hover {
+    box-shadow: inset 4px 3px 6px rgba(0, 0, 0, 0.25);
+    transform: scaleX(1.07) scaleY(1.07);
+}
+#LogMood {
+    background-color: #6366f1;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1.75rem;
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 1.5rem auto 0 auto; /* Add margin-top, center horizontally */
+    position: static; /* Remove absolute/relative positioning */
+    top: auto;
+}
+
+#LogMood:hover {
+  background-color: #4f46e5;
+  transform: scale(1.05);
 }
