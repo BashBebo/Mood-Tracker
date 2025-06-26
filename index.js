@@ -1,16 +1,16 @@
 const moodbutton = document.querySelectorAll('.mood-btn');
 let selectedMood = null;
 
-moodbutton.forEach(button, () => {
+moodbutton.forEach((button) => {
     button.addEventListener('click', () => {
-        moodbutton.forEach(btn => classlist.remove('selected'));
-        button.classlist.add('selected');
+        moodbutton.forEach(btn => btn.classList.remove('selected'));
+        button.classList.add('selected');
         selectedMood = button.dataset.mood;
     })
 })
 
-const LogMood = document.getElementById('LogMood');
-LogMood.addEventListener('click', () => {
+const logMood = document.getElementById('LogMood');
+logMood.addEventListener('click', () => {
     if (selectedMood) {
         alert(`You have logged your mood as: ${selectedMood}`);
     } else {
