@@ -1,7 +1,7 @@
 body {
-  font-family: 'Inter' , sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #111827;
-  background: linear-gradient(130deg, #ffffff, #dadada);
+  background: linear-gradient(130deg, #f9fafb, #e5e7eb);
   margin: 0;
   padding: 0;
 }
@@ -73,28 +73,55 @@ h1, h2 {
     box-shadow: inset 4px 3px 6px rgba(0, 0, 0, 0.25);
     transform: scaleX(1.07) scaleY(1.07);
 }
-#LogMood {
-    background-color: #6366f1;
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.75rem 1.75rem;
-    border: none;
-    border-radius: 999px;
-    box-shadow: 0 3px 12px rgba(99, 102, 241, 0.5);
-    cursor: pointer;
-    transition: background-color 0.3s ease-in, transform 0.3s ease-in-out;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    position: relative;
-    top: -14rem;
-    right: -35rem;
+.mood-btn.selected {
+  background-color: #6366f1;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.2), 1px 4px 12px rgba(99, 102, 241, 0.3);
 }
-/* fix the positoning of the log button to be under the buttons not sticking to the freaking floor */
 
-#LogMood:hover {
+.mood-btn {
+  font-size: 2.1rem;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e4e6e9; /* Light gray */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: inset 3px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.mood-btn:hover {
+  box-shadow: inset 4px 3px 6px rgba(0, 0, 0, 0.25);
+  transform: scaleX(1.07) scaleY(1.07);
+}
+
+.Log_Mood {
+  background-color: #6366f1;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.75rem;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 3px 12px rgba(99, 102, 241, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in-out;
+  display: flex; /* Ensures proper centering */
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  margin: 2rem auto; /* Centers horizontally and adds spacing */
+  position: relative;
+}
+
+/* Adjust hover effect */
+.Log_Mood:hover {
   background-color: #4f46e5;
   transform: scale(1.05);
   box-shadow: 0 4px 14px rgba(99, 102, 241, 0.7);
