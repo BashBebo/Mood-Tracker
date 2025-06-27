@@ -126,3 +126,13 @@ h1, h2 {
   transform: scale(1.05);
   box-shadow: 0 4px 14px rgba(99, 102, 241, 0.7);
 }
+
+.responsebox {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ecfdf5;
+  border-left: 5px solid #10b981;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: none;
+}
